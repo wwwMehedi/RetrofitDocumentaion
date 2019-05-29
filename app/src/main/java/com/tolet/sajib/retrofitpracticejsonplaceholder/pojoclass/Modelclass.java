@@ -4,25 +4,28 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Modelclass {
-    @SerializedName("userId")
+    @SerializedName("postId")
     @Expose
-    private Integer userId;
+    private Integer postId;
     @SerializedName("id")
     @Expose
     private Integer id;
-    @SerializedName("title")
+    @SerializedName("name")
     @Expose
-    private String title;
+    private String name;
+    @SerializedName("email")
+    @Expose
+    private String email;
     @SerializedName("body")
     @Expose
     private String body;
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getPostId() {
+        return postId;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setPostId(Integer postId) {
+        this.postId = postId;
     }
 
     public Integer getId() {
@@ -33,12 +36,20 @@ public class Modelclass {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getBody() {
